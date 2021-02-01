@@ -35,6 +35,7 @@ To perform this analysis, the following dataset of cryptocurrencies with six fea
 In order to prepare the data to create clusters from unsupervised learning models, a significant amount of preprocessing was necessary.  This involved filtering to only include currencies still being traded on the market, removing rows of missing values, and splitting the data into two dataframes.  The first dataframe was only for coin names and the other dataframe contained the columns "algorithm", "ProofType", "TotalCoinsMined", and "TotalCoinSupply" as this second dataframe would be used for clustering.  
 
 ![](images_for_readme/split_df1.png)
+
 ![](images_for_readme/split_df2.png)
 Since the unsupervised learning models required all data input to be numerical, the pandas "get_dummmies" method was employed on the algorithm and prooftype columns to create "dummy" numerical columns.  Finally, the dataframe was scaled using the StandardScaler method from scikit-learn's library.
 
