@@ -30,7 +30,7 @@ Software:
 
 To perform this analysis, the following dataset of cryptocurrencies with six features was loaded into a dataframe.  Notably, unsupervised learning is performed strictly on unlabeled input data with no defined output (target) and all of our inputs were provided by this dataset of about 1,200 observations.
 
-![](images_for_readme/starting_df.png)
+![](images_for_readme/starting_dataframe_image.png)
 
 In order to prepare the data to create clusters from unsupervised learning models, a significant amount of preprocessing was necessary.  This involved filtering to only include currencies still being traded on the market, removing rows of missing values, and splitting the data into two dataframes.  The first dataframe was only for coin names and the other dataframe contained the columns "algorithm", "ProofType", "TotalCoinsMined", and "TotalCoinSupply" as this second dataframe would be used for clustering.  
 
