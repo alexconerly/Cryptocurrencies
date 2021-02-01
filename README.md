@@ -35,10 +35,8 @@ To perform this analysis, the following dataset of cryptocurrencies with six fea
 In order to prepare the data to create clusters from unsupervised learning models, a significant amount of preprocessing was necessary.  This involved filtering to only include currencies still being traded on the market, removing rows of missing values, and splitting the data into two dataframes.  The first dataframe was only for coin names and the other dataframe contained the columns "algorithm", "ProofType", "TotalCoinsMined", and "TotalCoinSupply" as this second dataframe would be used for clustering.  
 
 ![](images_for_readme/split_df1.png)
-
+![](images_for_readme/split_df2.png)
 Since the unsupervised learning models required all data input to be numerical, the pandas "get_dummmies" method was employed on the algorithm and prooftype columns to create "dummy" numerical columns.  Finally, the dataframe was scaled using the StandardScaler method from scikit-learn's library.
-
-![](images_for_readme/numerical_and_scaled.png)
 
 ---------
 ## Principal Component Analysis
@@ -82,7 +80,7 @@ For organizational purposes, a new dataframe vizualization was created without t
 
 Finally, a scatter plot was created to exhibit the 2 dimensional relationship of each observation with the total number of coins mined vs the total coins supply, with the color of datapoints designated to represent each of the four classes (0,1,2, or 3).  As seen from the image below, most of the data falls in a similar range but there may be a couple outliers in the dataset from two different classes (1 and 2).
 
-![](images_for_readme/scatter.png)
+![](images_for_readme/final_scatter.png)
 
 
 ## Summary
