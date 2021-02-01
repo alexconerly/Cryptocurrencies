@@ -34,7 +34,7 @@ To perform this analysis, the following dataset of cryptocurrencies with six fea
 
 In order to prepare the data to create clusters from unsupervised learning models, a significant amount of preprocessing was necessary.  This involved filtering to only include currencies still being traded on the market, removing rows of missing values, and splitting the data into two dataframes.  The first dataframe was only for coin names and the other dataframe contained the columns "algorithm", "ProofType", "TotalCoinsMined", and "TotalCoinSupply" as this second dataframe would be used for clustering.  
 
-![](images_for_readme/split_df.png)
+![](images_for_readme/split_df1.png)
 
 Since the unsupervised learning models required all data input to be numerical, the pandas "get_dummmies" method was employed on the algorithm and prooftype columns to create "dummy" numerical columns.  Finally, the dataframe was scaled using the StandardScaler method from scikit-learn's library.
 
@@ -70,7 +70,7 @@ Given that the numerical data was now grouped into four classes, a conglomerativ
 
 Of course, the results of the unsupervised learning model were the for classes or clusters of four groups created from the principal components.  However, the relationships and dispersion of the classes were more intuitively viewable by plotting the groups in the three spatial dimensions for each principal component.  Seen below is a 3-dimensional representation made possible by the express module from the plotly library.  Some examples revealed by the 3D plot, class 0 and 1 appear to possess more similarity in their PC 2 and PC 1 dimensions, whereas classes 2 and 3 appear to exhbit vaster separation in PC 3 values from the first two classes.
 
-![](images_for_readme/3D_plotly.express.png)
+![](images_for_readme/3D_plotly.express_image.png)
 
 For organizational purposes, a new dataframe vizualization was created without the vestigial three principal component columns by using hvplot (see below). 
 
