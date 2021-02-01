@@ -63,7 +63,7 @@ Once we had established to use four clusters, the k-means algorithm was used to 
 
 Given that the numerical data was now grouped into four classes, a conglomerative dataframe was concatinated to contain the coin name, the four columns used for the numerical input, the three principal components, and the newly created classes.
 
-![](images_for_readme/conglomerative_df.png)
+![](images_for_readme/conglomeration_df.png)
 
 
 ## Results:
