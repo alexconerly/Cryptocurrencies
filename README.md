@@ -45,7 +45,7 @@ Since the unsupervised learning models required all data input to be numerical, 
 
 Once the dataframe that was set aside for clustering had been numericalized and scaled, the data dimensions were excessive in number of features.  To reduce the dimensions and to avoid overfitting of the data, the features were reduced to three principal components as follows:
 
-![](images_for_readme/pca.png)
+![](images_for_readme/principal_components.png)
 
 ---------
 ## Determining Number of Clusters for K-means
