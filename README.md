@@ -1,5 +1,7 @@
 # Cryptocurrencies
 
+![](images_for_readme/crypto_pub_domain.png)
+
 ## Overview of the Analysis
 
 The purpose of this project was to use unsupervised learning algorithms in order to assist a manager for a fictitious investment bank in performing an analysis on a dataset of cryptocurrencies to establish clusters (groups) in the data.  The hope for the client is that once the groups of cryptocurrencies were established, the clusters could be further investigated to determine their meaning and, ideally, whether each group represents differences in investment viability for their customers.
