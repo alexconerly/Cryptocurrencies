@@ -1,4 +1,4 @@
-# Cryptocurrencies Analysis with Unsupervised Machine Learning
+# Cryptocurrency Analysis with Unsupervised Machine Learning
 
 ## Project Overview
 
