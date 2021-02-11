@@ -1,6 +1,6 @@
 # Cryptocurrencies
 
-![](images_for_readme/crypto_pub_domain.png)
+![](images_for_readme/new_crypto_image_pub_dom.jpeg)
 
 ## Overview of the Analysis
 
