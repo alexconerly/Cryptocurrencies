@@ -67,7 +67,7 @@ Given that the numerical data was now grouped into four classes, a conglomerativ
 
 ## Results:
 
-Of course, the results of the unsupervised learning model were the for classes or clusters of four groups created from the principal components.  However, the relationships and dispersion of the classes were more intuitively viewable by plotting the groups in the three spatial dimensions for each principal component.  Seen below is a 3-dimensional representation made possible by the express module from the plotly library.  Some examples revealed by the 3D plot, class 0 and 1 appear to possess more similarity in their PC 2 and PC 1 dimensions, whereas classes 2 and 3 appear to exhbit vaster separation in PC 3 values from the first two classes.
+Of course, the results of the unsupervised learning model were the classes or clusters of four groups created from the principal components.  However, the relationships and dispersion of the classes were more intuitively viewable by plotting the groups in the three spatial dimensions for each principal component.  Seen below is a 3-dimensional representation made possible by the express module from the plotly library.  Some examples revealed by the 3D plot, class 0 and 1 appear to possess more similarity in their PC 2 and PC 1 dimensions, whereas classes 2 and 3 appear to exhibit vaster separation in PC 3 values from the first two classes.
 
 ![](images_for_readme/3D_plotly.express_image.png)
 
