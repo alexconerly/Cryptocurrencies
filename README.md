@@ -49,7 +49,7 @@ Once the dataframe that was set aside for clustering had been numericalized and 
 ---------
 ## Determining Number of Clusters for K-means
 
-To determine the number of clusters to use for our unsupervised model, an elbow curve was used.  By looping through a list of potential cluster (k) numbers using the k-means algorithm on the principal components, the elbow curve displayed the inertia values of each number.  Since the curve appeared to reach near-horizontial orientation around four "k" clusters, this allowed us to select "four" as the number of clusters to use in our k-means algorithm in the next step.
+To determine the number of clusters to use for our unsupervised model, an elbow curve was used.  By looping through a list of potential cluster (k) numbers using the k-means algorithm on the principal components, the elbow curve displayed the inertia values of each number.  Since the curve appeared to reach near-horizontal orientation around four "k" clusters, this allowed us to select "four" as the number of clusters to use in our k-means algorithm in the next step.
 
 ![](images_for_readme/elbow_curve_suggests_4k.png)
 
@@ -60,7 +60,7 @@ Once we had established to use four clusters, the k-means algorithm was used to 
 
 ![](images_for_readme/k-means_with_4_classes.png)
 
-Given that the numerical data was now grouped into four classes, a conglomerative dataframe was concatinated to contain the coin name, the four columns used for the numerical input, the three principal components, and the newly created classes.
+Given that the numerical data was now grouped into four classes, a conglomerative dataframe was concatenated to contain the coin name, the four columns used for the numerical input, the three principal components, and the newly created classes.
 
 ![](images_for_readme/conglomeration_df.png)
 
@@ -79,11 +79,11 @@ For organizational purposes, a new dataframe vizualization was created without t
 
 ![](images_for_readme/preparing_for_scatter.png)
 
-Finally, a scatter plot was created to exhibit the 2 dimensional relationship of each observation with the total number of coins mined vs the total coins supply, with the color of datapoints designated to represent each of the four classes (0,1,2, or 3).  As seen from the image below, most of the data falls in a similar range but there may be a couple outliers in the dataset from two different classes (1 and 2).
+Finally, a scatter plot was created to exhibit the 2 dimensional relationship of each observation with the total number of coins mined vs the total coins supply, with the color of data points designated to represent each of the four classes (0,1,2, or 3).  As seen from the image below, most of the data falls in a similar range but there may be a couple outliers in the dataset from two different classes (1 and 2).
 
 ![](images_for_readme/final_scatter.png)
 
 
 ## Summary
 
-Overall, using the K-means algorithm was successful at producing four clusters of cryptocurrencies according to their similarities in the metrics provided by the dataset.  Of course, there are other unsupervised learning options we could have employed, such as heirarchal clustering (which would've involved a dendrogram instead of an elbow curve to determine the number of clusters ('k')), but the k-means algorithm sufficed quite well, especially with the aid of the elbow curve test.  Ultimately, the investment bank client could use these classifications for further research to help their customers build a useful cryptocurrency portfolio.
+Overall, using the K-means algorithm was successful at producing four clusters of cryptocurrencies according to their similarities in the metrics provided by the dataset.  Of course, there are other unsupervised learning options we could have employed, such as hierarchal clustering (which would've involved a dendrogram instead of an elbow curve to determine the number of clusters ('k')), but the k-means algorithm sufficed quite well, especially with the aid of the elbow curve test.  Ultimately, the investment bank client could use these classifications for further research to help their customers build a useful cryptocurrency portfolio.
