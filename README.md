@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-The purpose of this project was to use unsupervised learning algorithms in order to assist a manager for a fictitious investment bank in performing an analysis on a dataset of cryptocurrencies to establish clusters (groups) in the data.  The hope for the client is that once the groups of cryptocurrencies were established, the clusters could be further investigated to determine their meaning and, ideally, whether each grouping represents differences in investment viability for their customers.
+The purpose of this project was to use unsupervised learning algorithms in order to assist a manager for an investment bank in performing an analysis on a dataset of cryptocurrencies to establish clusters (groups) in the data.  The hope for the client is that once the groups of cryptocurrencies were established, the clusters could be further investigated to determine their meaning and, ideally, whether each grouping represents differences in investment viability for their customers.
 
 ![](images_for_readme/new_crypto_image_pub_dom.jpeg)
 ---------------------------------------------
@@ -31,13 +31,13 @@ To perform this analysis, the following dataset of cryptocurrencies with six fea
 
 ![](images_for_readme/starting_dataframe_image.png)
 
-In order to prepare the data to create clusters from unsupervised learning models, a significant amount of preprocessing was necessary.  This involved filtering to only include currencies still being traded on the market, removing rows of missing values, and splitting the data into two dataframes.  The first dataframe was only for coin names and the other dataframe contained the columns "algorithm", "ProofType", "TotalCoinsMined", and "TotalCoinSupply" as this second dataframe would be used for clustering.  
+In order to prepare the data to create clusters from unsupervised learning models, a significant amount of preprocessing was necessary.  This involved filtering the dataset to only include currencies still being traded on the market, removing rows of missing values, and splitting the data into two dataframes.  The first dataframe was only for coin names and the other dataframe contained the columns "algorithm", "ProofType", "TotalCoinsMined", and "TotalCoinSupply" as this second dataframe would be used for clustering.  
 
 ![](images_for_readme/split_df1.png)
 
 ![](images_for_readme/split_df2.png)
 
-Since the unsupervised learning models required all data input to be numerical, the pandas "get_dummmies" method was employed on the categorical columns to create numerical columns for each unique value.  Finally, the dataframe was scaled using the StandardScaler method from scikit-learn's library.
+Since the unsupervised learning models required all data input to be numerical, the pandas "get_dummmies" method was employed on the categorical "prooftype" columns to create numerical columns for each unique value.  Finally, the dataframe was scaled using the StandardScaler method from scikit-learn's library.
 
 ---------
 ## Principal Component Analysis
